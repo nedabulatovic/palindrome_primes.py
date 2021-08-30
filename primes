@@ -1,0 +1,8 @@
+count = 0 
+palindrome_primes = []
+for i in range(10000,100000): 
+	temp = str(i) 
+	if int(temp[::-1])==i: 
+		palindrome_primes.append(i)
+		count += 1 
+print(palindrome_primes)
